@@ -1,0 +1,87 @@
+/* src/App.css */
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  padding-top: 60px; /* Navbar'ın yüksekliği kadar üstte boşluk bırakılır */
+}
+
+nav {
+  background-color: #333;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  top: 0; /* Navbar'ın en üstte başlamasını sağlar */
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+li {
+  margin-right: 10px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 20px;
+  margin-top: 60px; /* Navbar'ın hemen altında başlamasını sağlar */
+}
+
+/* Mobil Uyumlu Tasarım */
+@media (max-width: 768px) {
+  ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  main {
+    padding-top: 80px; /* Navbar yüksekliği değiştiği için sayfa içeriğini aşağı kaydır */
+    margin-top: 80px; /* Navbar'ın hemen altında başlamasını sağlar */
+  }
+}
+
+/* Sayfa Başlığı */
+.page-title {
+  text-align: center;
+  margin-top: 50px; /* Sayfanın en üst kısmından başlamasını sağlar */
+}
+.page-content {
+  margin-top: -280px; /* Navbar'ın hemen altında başlamasını sağlar */
+  
+}
+.form-group {
+  margin-bottom: 15px;
+}
+
+button {
+  padding: 10px;
+  cursor: pointer;
+  background-color: blue;  
+  color: red;
+  border: 4px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #3ed5e2;
+}

@@ -1,2 +1,3 @@
-# S-navOrtalamas-Hesapla
-8.Hafta Projesi
+# React + Vite
+
+Üniversite sınav ortalama hesaplama 
